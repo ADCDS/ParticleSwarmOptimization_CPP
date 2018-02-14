@@ -5,7 +5,6 @@
 #include <math.h>
 #include <string>
 #include <iostream>
-#include "GUI.h"
 
 
 PSO::PSO(int dimensions_num, int particle_num, int max_it, double max_velocity, std::vector<std::pair<double, double>>* dimensions_limits)
@@ -101,9 +100,6 @@ Particle* PSO::run()
 			particle.state = tmp_state;
 		}
 
-		mtx_drawable_particles.lock();
-		drawable_particles = particles;
-		mtx_drawable_particles.unlock();
 
 		std::cout << "Best particle:\t\t " << best_particle->to_string() << "\t\t\tEval: " << best_particle_eval << "\n";
 	}

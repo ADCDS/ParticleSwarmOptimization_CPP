@@ -133,12 +133,10 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="GUI.h" />
     <ClInclude Include="Particle.h" />
     <ClInclude Include="PSO.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="GUI.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Particle.cpp" />
     <ClCompile Include="PSO.cpp" />

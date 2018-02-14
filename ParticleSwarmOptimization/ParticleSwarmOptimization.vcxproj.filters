@@ -19,16 +19,10 @@
     <Filter Include="Source Files\Classes\Algorithm">
       <UniqueIdentifier>{09620b75-ad50-429a-b879-d36f6c302552}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Classes\GUI">
-      <UniqueIdentifier>{48f301c0-4bb9-4fce-86c8-1d5995f0193f}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Particle.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GUI.h">
-      <Filter>Source Files\Classes\GUI</Filter>
     </ClInclude>
     <ClInclude Include="PSO.h">
       <Filter>Source Files\Classes\Algorithm</Filter>
@@ -46,9 +40,6 @@
     </ClCompile>
     <ClCompile Include="Utils.h">
       <Filter>Header Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GUI.cpp">
-      <Filter>Source Files\Classes\GUI</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

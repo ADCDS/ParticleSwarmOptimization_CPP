@@ -13,9 +13,6 @@ public:
 	double max_velocity;
 	std::vector<std::pair<double /*min*/, double /*max*/>>* dimensions_limits;
 	std::vector<Particle> particles;
-
-	std::mutex mtx_drawable_particles;
-	std::vector<Particle> drawable_particles;
 	
 
 
