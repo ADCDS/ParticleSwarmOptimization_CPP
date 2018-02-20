@@ -3,10 +3,10 @@
 #include "PSO.h"
 #include <iostream>
 
-
+#define WINDOW_SIZE 500
 GUI::GUI()
 {
-	this->window = new sf::RenderWindow(sf::VideoMode(500, 500), "Particle Swarm Optimization (x: " + std::to_string(this->x) + ",y: " + std::to_string(this->y) + ")");
+	this->window = new sf::RenderWindow(sf::VideoMode(WINDOW_SIZE, WINDOW_SIZE), "Particle Swarm Optimization (x: " + std::to_string(this->x) + ",y: " + std::to_string(this->y) + ")");
 }
 
 
@@ -14,13 +14,13 @@ void GUI::display(PSO* pso)
 {
 	sf::Vertex x[] =
 	{
-		sf::Vertex(sf::Vector2f(250, 0)),
-		sf::Vertex(sf::Vector2f(250, 500))
+		sf::Vertex(sf::Vector2f(WINDOW_SIZE/2, 0)),
+		sf::Vertex(sf::Vector2f(WINDOW_SIZE/2, WINDOW_SIZE))
 	};
 	sf::Vertex y[] =
 	{
-		sf::Vertex(sf::Vector2f(0, 250)),
-		sf::Vertex(sf::Vector2f(500, 250))
+		sf::Vertex(sf::Vector2f(0, WINDOW_SIZE/2)),
+		sf::Vertex(sf::Vector2f(WINDOW_SIZE, WINDOW_SIZE/2))
 	};
 
 
@@ -60,7 +60,7 @@ void GUI::display(PSO* pso)
 			for (auto particle : pso->drawable_particles)
 			{
 				sf::CircleShape shape(1);
-				shape.setPosition(particle.state[this->x] * 40 + 250, particle.state[this->y] * 40 + 250);
+				shape.setPosition(particle.state[this->x] * WINDOW_SIZE/11 + WINDOW_SIZE/2, particle.state[this->y] * WINDOW_SIZE/11 + WINDOW_SIZE/2);
 				//std::cout << particle.state[this->x] * 40 + 250 << ", " << particle.state[this->y] * 40 + 250 << "\n";
 				window->draw(shape);
 			}
