@@ -1,6 +1,8 @@
-#pragma once
-#include <vector>
+#ifndef PARTICLE_H
+#define PARTICLE_H
 
+#include <vector>
+#include <string>
 class Particle
 {
 public:
@@ -15,3 +17,4 @@ public:
 	std::string to_string() const;
 };
 
+#endif

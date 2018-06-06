@@ -1,4 +1,5 @@
-﻿#pragma once
+﻿#ifndef GUI_H
+#define GUI_H
 
 namespace sf {
 	class RenderWindow;
@@ -14,3 +15,5 @@ public:
 
 	GUI();
 };
+
+#endif

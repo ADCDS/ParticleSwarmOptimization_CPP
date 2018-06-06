@@ -1,6 +1,8 @@
-#pragma once
+#ifndef PSO_H
+#define PSO_H
+
 #include <vector>
-#include <mutex>;
+#include <mutex>
 
 #include "Particle.h"
 
@@ -19,7 +21,7 @@ public:
 	
 
 
-	PSO::PSO(int dimensions_num, int particle_num, int max_it, double max_velocity, std::vector<std::pair<double, double>>* dimensions_limits);
+	PSO(int dimensions_num, int particle_num, int max_it, double max_velocity, std::vector<std::pair<double, double>>* dimensions_limits);
 
 	Particle* run();
 	double eval(std::vector<double>* p);
@@ -27,3 +29,4 @@ public:
 	~PSO();
 };
 
+#endif

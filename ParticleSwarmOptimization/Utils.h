@@ -1,4 +1,7 @@
-﻿#include <algorithm>
+﻿#ifndef UTILS_H
+#define UTILS_H
+
+#include <algorithm>
 #include <functional>
 #include <cassert>
 #include <vector>
@@ -42,3 +45,5 @@ std::vector<T> operator*(const double& a, const std::vector<T>& b)
 	}
 	return result;
 }
+
+#endif

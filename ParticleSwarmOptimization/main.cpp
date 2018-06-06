@@ -1,6 +1,7 @@
 #include "PSO.h"
 #include "GUI.h"
 #include <thread>
+#include <climits>
 
 int main()
 {
